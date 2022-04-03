@@ -1,0 +1,171 @@
+.content{
+
+    width: 50%;
+    margin: 6px auto;
+    box-shadow: 1px 1px 10px .4px #ccc;
+    border-radius: 4px;
+    padding: 20px;
+}
+@media (max-width: 630px){
+    .content{
+        width: 70%;
+        
+    }
+}
+@media (max-width: 494px){
+    .content{
+        width: 80%;
+        
+    }
+}
+
+ h1{
+    display: block;
+    text-align: center;
+    font-family: sans-serif;
+
+}
+.content_g{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 370px){
+    .content_g{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);;
+    }
+}
+.form__input{
+
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 3px;
+}
+@media (max-width:  370px){
+    .form__input{
+ margin: 6px;
+ padding: 1px;
+    }
+}
+.formulario label{
+    margin-top: 4px;
+    margin-bottom: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.input{
+   
+    width: 100%;
+    padding: 8px;
+    border: 2px solid rgb(14, 107, 184);
+    border-radius: 2px;
+    outline: none;
+}
+.input:focus{
+    box-shadow: 0px 0px 4px .2px rgb(14, 107, 184);
+}
+input[type="submit"]{
+    border: none;
+    padding:6px;
+    color: #fff;
+    font-size: 20px;
+    width: 100%; 
+    margin: 10px auto;
+    background: rgb(8, 146, 54);
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    border-radius:3px;
+
+}
+input[type="submit"]:hover{
+    background: rgb(8, 167, 61);
+}
+@media (max-width: 346px){
+    .content{
+        width: 87%;
+        margin: 3px auto;
+        
+    }
+    .input{
+        padding: 4px;
+    }
+    input[type="submit"]{
+        font-size: 15px;
+    }
+}
+.__gty{
+    cursor: pointer;
+    padding:5px;
+    border: 2px solid rgb(14, 107, 184);
+    border-radius: 2px;
+    outline: none;
+}
+.errrordatos{
+    
+    box-shadow: 0px 0px 4px .2px rgb(218, 13, 13);
+    border: 2px solid rgb(230, 10, 10);
+
+}
+.datosgood{
+    box-shadow: 0px 0px 4px .2px rgb(10, 71, 141);
+    border: 2px solid rgb(10, 71, 141);
+}
+.labeltext{
+    color: red;
+}
+.validarText{
+
+    text-align: center;
+    color: rgb(8, 153, 8);
+    font-size: 20px;
+    padding: 3px;
+    font-family: sans-serif;
+}
+.errtext{
+    text-align: center;
+    color: rgb(211, 8, 8);
+    font-size: 20px;
+    padding: 3px;
+    font-family: sans-serif;
+}
+
+ .content__header{
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px;
+            border-bottom: 2px solid rgb(7, 118, 192);
+        }
+        .__title{
+
+            font-size: 22px;
+            font-family: sans-serif;
+            color: rgb(12, 61, 153);
+
+        }
+        .text{
+            font-size: 22px;
+            color: #000;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+    .__foot{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 2px solid rgb(7, 118, 192);
+       }
+
+       .__foot h2{
+
+        font-weight: bold;
+
+        font-family: sans-serif;
+           color: rgb(7, 118, 192);
+       }

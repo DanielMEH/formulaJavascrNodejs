@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title><%= name %> </title>
+</head>
+
+<body>
+
+    <%- include("components/header.html") %> 
+    <h1>Formulario</h1>
+    <div class="content">
+        <form action="" class="formulario" method="post">
+
+            <div class="content_g">
+                <div class="form__usuario form__input">
+                    <label for="usuario" class="label__usuario">Usuario</label>
+                    <input type="text" class="input group__usuario" name="usuario" id="usuario">
+                </div>
+
+
+                <div class="form__names form__input">
+                    <label for="names " class="label__names">Nombre</label>
+                    <input type="text" class="input group__names" name="names" id="names">
+
+                </div>
+
+                <div class="form_email form__input">
+                    <label for="email" class="label__email">Email</label>
+                    <input type="email" class="input group__email" name="email" id="email">
+                </div>
+
+                <div class="form_telefono form__input">
+                    <label for="telefono" class="label__telefono">Telefono</label>
+                    <input type="tel" class="input group__telefono" name="telefono" id="telefono">
+                </div>
+
+
+                <div class="form_password form__input">
+                    <label for="password" class="label__password">Contraseña</label>
+                    <input type="password" class="input group__password" name="password" id="password">
+                </div>
+                <div class="form_password2 form__input">
+                    <label for="password2" class="label__password2">Confirmar contraseña</label>
+                    <input type="password" class="input group__password2" name="password2" id="password2">
+                </div>
+                <div class="form__input">
+                    <select class="input group__dia __gty" name="dia"  id="diaSelect">
+                        <option disabled selected class="label__dia">Dia</option>
+                    </select>
+                </div>
+                <div class="form__input">
+                    <select class="input group__year __gty" name="year" id="mesyear">
+                        <option disabled selected class="label__year">Fecha de nacimiento</option>
+                    </select>
+                </div>
+            </div>
+            <input type="submit" value="Enviar datos" id="enviar">
+        </form>
+
+        <div class="validarText"></div>
+        <div class="errtext"></div>
+
+    </div>
+    <script src="js/camposForm.js"></script>
+
+    <%- include("components/footer.html") %> 
+</body>
+
+</html>
